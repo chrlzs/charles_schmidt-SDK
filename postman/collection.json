@@ -1,0 +1,59 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "3daf11f1-1600-406d-9c15-b26d9ea432ff",
+      "name": "LOTR",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-04-18T01:20:49.000Z",
+      "uid": "1608203-3daf11f1-1600-406d-9c15-b26d9ea432ff"
+    },
+    "item": [
+      {
+        "name": "Get Movies",
+        "id": "77aadf4c-0ccc-4269-8eae-2ced47cf5f66",
+        "protocolProfileBehavior": { "disableBodyPruning": true },
+        "request": { "method": "GET", "header": [] },
+        "response": [],
+        "uid": "1608203-77aadf4c-0ccc-4269-8eae-2ced47cf5f66"
+      },
+      {
+        "name": "Get Movie By Id",
+        "id": "7d18ec58-8f01-4491-91c9-17d9931b2044",
+        "protocolProfileBehavior": { "disableBodyPruning": true },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              { "key": "token", "value": "{{Auth Token}}", "type": "string" }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://the-one-api.dev/v2/movie/5cd95395de30eff6ebccde5c",
+            "protocol": "https",
+            "host": ["the-one-api", "dev"],
+            "path": ["v2", "movie", "5cd95395de30eff6ebccde5c"]
+          }
+        },
+        "response": [],
+        "uid": "1608203-7d18ec58-8f01-4491-91c9-17d9931b2044"
+      },
+      {
+        "name": "Get Movie Quotes By Id",
+        "id": "1546a45c-cb4b-4bec-acfc-dc88b107c879",
+        "protocolProfileBehavior": { "disableBodyPruning": true },
+        "request": { "method": "GET", "header": [] },
+        "response": [],
+        "uid": "1608203-1546a45c-cb4b-4bec-acfc-dc88b107c879"
+      }
+    ],
+    "variable": [
+      {
+        "id": "fb5fb322-332e-4b19-b3f3-ff309acdb64c",
+        "key": "Auth Token",
+        "value": "[ GET YOUR API KEY HERE: https://the-one-api.dev/sign-up ]"
+      }
+    ]
+  }
+}
